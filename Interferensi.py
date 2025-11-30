@@ -1,7 +1,8 @@
-# Simulasi Interferensi 2D (Young Double-Slit) versi Layout RAPI
-import numpy as np
+# Simulasi Interferensi Pembelajaran Fisika
+import streamlit as st
+import math
 import matplotlib.pyplot as plt
-from matplotlib.widgets import Slider, Button, CheckButtons
+from matplotlib.patches as patches
 
 # ==========================================================
 # FUNGSI PERHITUNGAN INTERFERENSI
@@ -133,6 +134,7 @@ s_L.on_changed(update)
 check.on_clicked(lambda x: update(None))
 
 btn_reset.on_clicked(lambda x: [s_a.reset(), s_d.reset(), s_wl.reset(), s_L.reset()])
+
 
 
 plt.show()
