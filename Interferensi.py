@@ -2,7 +2,7 @@
 import streamlit as st
 import math
 import matplotlib.pyplot as plt
-from matplotlib.patches as patches
+from matplotlib import patches
 
 # ==========================================================
 # FUNGSI PERHITUNGAN INTERFERENSI
@@ -138,3 +138,4 @@ btn_reset.on_clicked(lambda x: [s_a.reset(), s_d.reset(), s_wl.reset(), s_L.rese
 
 
 plt.show()
+
